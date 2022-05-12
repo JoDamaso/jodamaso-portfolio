@@ -51,11 +51,11 @@ function ContactForm(props) {
         <div className="d-flex justify-content-center pt-5">
             <ul>
                 <h2 >Contact me:</h2>
-                <li>Email <i class="fa-solid fa-envelope"></i>: <a href='#'>darryldamaso@gmail.com</a></li>
-                <li>Phone Number <i class="fa-solid fa-square-phone-flip"></i>: 713-277-5859</li>
-                <li>LinkedIn <i class="fa-brands fa-linkedin"></i>: <a href='https://www.linkedin.com/in/john-damaso-1bb214211/' target='_blank' rel="noreferrer">https://www.linkedin.com/in/john-damaso</a></li>
-                <li>GitHub <i class="fa-brands fa-github"></i>: <a href='https://github.com/JoDamaso' target='_blank' rel="noreferrer">https://github.com/JoDamaso</a></li>
-                <li>Discord <i class="fa-brands fa-discord"></i>: JayyDee#5436</li>
+                <li>Email <i className="fa-solid fa-envelope"></i>: darryldamaso@gmail.com</li>
+                <li>Phone Number <i className="fa-solid fa-square-phone-flip"></i>: 713-277-5859</li>
+                <li>LinkedIn <i className="fa-brands fa-linkedin"></i>: <a href='https://www.linkedin.com/in/john-damaso-1bb214211/' target='_blank' rel="noreferrer">https://www.linkedin.com/in/john-damaso</a></li>
+                <li>GitHub <i className="fa-brands fa-github"></i>: <a href='https://github.com/JoDamaso' target='_blank' rel="noreferrer">https://github.com/JoDamaso</a></li>
+                <li>Discord <i className="fa-brands fa-discord"></i>: JayyDee#5436</li>
             </ul>
             <div className="d-flex justify-content-center">
                 <form id="contact-form" onSubmit={handleSubmit} >
@@ -87,5 +87,4 @@ function ContactForm(props) {
     // Due to keywords reserved in JavaScript, we need to replace the for attribute in the <label> element to htmlFor, just as class had to be changed to className previously.
 };
 
-// name of the function needs to be in the export statement.
 export default ContactForm;

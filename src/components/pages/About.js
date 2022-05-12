@@ -3,7 +3,7 @@ import pic from '../assets/IMG_7515-min.png'
 
 function About() {
     return (
-        <section className='d-flex justify-content-center align-content-center pt-2'>
+        <section className='d-flex justify-content-center align-content-center pt-3'>
             {/* <div className="card shadow p-3 mb-5 bg-body rounded" >
                 <img src={pic} className="card-img-top rounded" alt="Headshot of John Damaso" />
                 <div className="card-body">
@@ -12,19 +12,20 @@ function About() {
                 </div>
             </div> */}
             <div className="card mb-3 bg-body col-md-9">
-                <div className="row g-0">
+                <div className="row">
                     <div className="col-md-4">
-                        <img src={pic} className="img-fluid rounded-start" alt="Headshot of John Damaso"/>
+                        <img src={pic} className="img-fluid rounded-start" alt="Headshot of John Damaso" />
                     </div>
-                    <div className="col-md-2">
-                        <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p className="card-text"></p>
+                    <div className="row">
+                        <div className="card-body ">
+                            <h5 className="card-title">John Darryl Damaso</h5>
+                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adip</p>
+
                         </div>
                     </div>
                 </div>
             </div>
+            
         </section>
     )
 };

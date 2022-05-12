@@ -14,21 +14,22 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <React.Fragment>
       {/*
         currentPage as the inital state, handlePageChange function sent over
         passing <NavTabs code as a child of PortfolioContainer
         sending value and function.
         */}
-      <Header></Header>
+      <Header />
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* conditionally renders, checks the equality then returns a certain component  */}
       {currentPage !== 'About' ? '' : <About />}
       {currentPage !== 'Projects' ? '' : <Projects />}
       {currentPage !== 'Resume' ? '' : <Resume />}
       {currentPage !== 'Contact' ? '' : <Contact />}
-      <Footer></Footer>
-    </div>
+      
+      <Footer />
+    </React.Fragment>
   );
 }
 
