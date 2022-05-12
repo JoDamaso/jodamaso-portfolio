@@ -10,55 +10,27 @@ import Footer from './components/Footer'
 function App() {
   const [currentPage, setCurrentPage] = useState('About');
 
-  // conditionally renders, checks the equality then returns a certain component 
-  const renderPage = () => {
-    if (currentPage === 'About') {
-      return <About />;
-    }
-    if (currentPage === 'Projects') {
-      return <Projects />;
-    }
-    if (currentPage === 'Resume') {
-      return <Resume />;
-    }
-    if (currentPage === 'Contact') {
-      return <Contact />;
-    }
-    return <About />;
-  };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-    {/*
+      {/*
         currentPage as the inital state, handlePageChange function sent over
         passing <NavTabs code as a child of PortfolioContainer
         sending value and function.
         */}
-    <Header></Header>
-    <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-    {renderPage()}
-    <Footer></Footer>
-  </div>
-
+      <Header></Header>
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      {/* conditionally renders, checks the equality then returns a certain component  */}
+      {currentPage !== 'About' ? '' : <About />}
+      {currentPage !== 'Projects' ? '' : <Projects />}
+      {currentPage !== 'Resume' ? '' : <Resume />}
+      {currentPage !== 'Contact' ? '' : <Contact />}
+      <Footer></Footer>
+    </div>
   );
 }
 
 export default App;
 
-{/* <div>
-<Header>
-</Header>
-<Nav>
-    
-</Nav>
-<main>
-  <About></About>
-  <Project>
-
-  </Project>
-  <Contact></Contact>
-</main>
-<Footer></Footer>
-</div> */}

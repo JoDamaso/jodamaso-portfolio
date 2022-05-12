@@ -28,15 +28,15 @@ function ContactForm(props) {
             }
         }
 
-        
-    // This function will sync the internal state of the component formState with the user input from the DOM. 
-    // The onChange event listener will ensure that the handleChange function fires whenever a keystroke is typed into the input field for name.
-    // We use the spread operator, ...formState, so we can retain the other key-value pairs in this object. Without the spread operator, the formState object would be overwritten to only contain the name: value key pair.
+
+        // This function will sync the internal state of the component formState with the user input from the DOM. 
+        // The onChange event listener will ensure that the handleChange function fires whenever a keystroke is typed into the input field for name.
+        // We use the spread operator, ...formState, so we can retain the other key-value pairs in this object. Without the spread operator, the formState object would be overwritten to only contain the name: value key pair.
         if (!errorMessage) {
-            setFormState({...formState, [e.target.name]: e.target.value })
+            setFormState({ ...formState, [e.target.name]: e.target.value })
         }
         // e.target.name matches the attribute on the input element, thus being dynamic
-        
+
         // console.log('errorMessage', errorMessage);
     }
 
@@ -48,36 +48,41 @@ function ContactForm(props) {
     }
 
     return (
-        <section>
-            <h2>Contact me</h2>
+        <div className="d-flex justify-content-center pt-5">
             <ul>
-                <li>Email: <a href='#'>darryldamaso@gmail.com</a></li>
-                <li>Phone Number: <a>713-277-5859</a></li>
-                <li>LinkedIn: <a href='https://www.linkedin.com/in/john-damaso-1bb214211/' target='_blank'>https://www.linkedin.com/in/john-damaso</a></li>
+                <h2 >Contact me:</h2>
+                <li>Email <i class="fa-solid fa-envelope"></i>: <a href='#'>darryldamaso@gmail.com</a></li>
+                <li>Phone Number <i class="fa-solid fa-square-phone-flip"></i>: 713-277-5859</li>
+                <li>LinkedIn <i class="fa-brands fa-linkedin"></i>: <a href='https://www.linkedin.com/in/john-damaso-1bb214211/' target='_blank' rel="noreferrer">https://www.linkedin.com/in/john-damaso</a></li>
+                <li>GitHub <i class="fa-brands fa-github"></i>: <a href='https://github.com/JoDamaso' target='_blank' rel="noreferrer">https://github.com/JoDamaso</a></li>
+                <li>Discord <i class="fa-brands fa-discord"></i>: JayyDee#5436</li>
             </ul>
-            <form id="contact-form" onSubmit={handleSubmit} >
-                <div>
-                    <label htmlFor="name">Name: </label>
-                    {/* onBlur={} waits for them to change focus, for email the conditonal will render after clicked off and is not valid */}
-                    <input type="text" name="name" onBlur={handleChange} defaultValue={name} />
-                </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
-                </div>
-                {/* conditonally render this div */}
-                {errorMessage && (
+            <div className="d-flex justify-content-center">
+                <form id="contact-form" onSubmit={handleSubmit} >
+                    <h2>Email Me</h2>
                     <div>
-                        <p className="error-text">{errorMessage}</p>
+                        <label htmlFor="name" class="form-label">Name: </label>
+                        {/* onBlur={} waits for them to change focus, for email the conditonal will render after clicked off and is not valid */}
+                        <input type="text" className="form-control" name="name" onBlur={handleChange} defaultValue={name} id="inputPassword4" placeholder="Very awesome name goes here!"/>
                     </div>
-                )}
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+                    <div>
+                        <label htmlFor="email" className="form-label">Email:</label>
+                        <input type="email" className="form-control" defaultValue={email} name="email" onBlur={handleChange} id="inputEmail4" placeholder="yourEmail@email.com"/>
+                    </div>
+                    <div>
+                        <label htmlFor="message">Message:</label>
+                        <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" placeholder="Leave me a message..." />
+                    </div>
+                    {/* conditonally render this div */}
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
+                    <button type="submit">Submit </button>
+                </form>
+            </div>
+        </div>
     )
     // Due to keywords reserved in JavaScript, we need to replace the for attribute in the <label> element to htmlFor, just as class had to be changed to className previously.
 };
