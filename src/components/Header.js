@@ -2,8 +2,8 @@ import React from 'react'
 
 function Header() {
     return (
-        <header>
-            <h1 className="d-flex align-content-center">John Damaso</h1>
+        <header className="d-flex justify-content-center">
+            <h1 className="p-1">John Damaso</h1>
         </header>
     )
 }
