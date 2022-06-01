@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/jodamaso-portfolio/static/css/main.7a949136.css",
+    "main.js": "/jodamaso-portfolio/static/js/main.9b637b0a.js",
+    "static/js/787.983bd57a.chunk.js": "/jodamaso-portfolio/static/js/787.983bd57a.chunk.js",
+    "static/media/IMG_7515-min.png": "/jodamaso-portfolio/static/media/IMG_7515-min.e511e4c8ec885257070f.png",
+    "static/media/resumePage-min.png": "/jodamaso-portfolio/static/media/resumePage-min.e6b58d2a89c600abecd6.png",
+    "index.html": "/jodamaso-portfolio/index.html",
+    "main.7a949136.css.map": "/jodamaso-portfolio/static/css/main.7a949136.css.map",
+    "main.9b637b0a.js.map": "/jodamaso-portfolio/static/js/main.9b637b0a.js.map",
+    "787.983bd57a.chunk.js.map": "/jodamaso-portfolio/static/js/787.983bd57a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a949136.css",
+    "static/js/main.9b637b0a.js"
+  ]
+}
