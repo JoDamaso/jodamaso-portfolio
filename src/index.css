@@ -137,6 +137,26 @@ li {
   font-size: large;
 }
 
+/* footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+  background: var(--lightblue);
+  bottom: 0;
+} */
+
+footer {
+  background: var(--lightblue);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: black;
+  font-size: 25px;
+  display: flex;
+  
+}
 
 
 nav a:hover {

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div>this is my footer</div>
+        <footer className="d-flex justify-content-center">Thanks for visting!</footer>
     )
 }
 
