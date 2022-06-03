@@ -24,9 +24,9 @@ function Project(props) {
             <div className="card">
                 <img src="..." className="card-img-top" alt="..."/>
                     <div className="card-body">
-                        <h1 className="card-title">Team Generator</h1>
-                        <p className="card-text">This was built with OOP and minding and TDD. Took advantage of Node.js and Inquirer to build this app. From the command line, you'll be prompted questions on who is on your tech team. Once generated, a public html would be accessible and for you to see.</p>
-                        <p className="card-text"><small className="text-muted"><a href='https://drive.google.com/file/d/1AS4_wzTiF0h8g0WQJpW_6IulL-czvHQm/view' target='_blank' rel="noreferrer">https://drive.google.com/file/d/1AS4_wzTiF0h8g0WQJpW_6IulL-czvHQm/view</a></small></p>
+                        <h1 className="card-title">Connected</h1>
+                        <p className="card-text">Connected is a job search engine, but more direct with the recruiters. Versus the typical linkedIn and Indeed. Here you'll talk directly to recruiters only, save jobs and plenty of other things</p>
+                        <p className="card-text"><small className="text-muted"><a href='https://connected-jobsearch-engine.herokuapp.com/' target='_blank' rel="noreferrer">https://connected-jobsearch-engine.herokuapp.com/</a></small></p>
                     </div>
             </div>
             <div className="card">
